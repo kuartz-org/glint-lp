@@ -1,0 +1,45 @@
+#hero {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1280px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  header {
+    margin-top: 4rem;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cta {
+      margin-top: 4rem;
+    }
+  }
+
+  .illustration svg {
+    display: none;
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  #hero {
+    header {
+      font-size: 1.2rem;
+    }
+
+    .illustration svg{
+      display: initial;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    .illustration svg{
+      max-width: 640px;
+    }
+  }
+}

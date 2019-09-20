@@ -1,0 +1,20 @@
+.btn {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+  text-decoration: none;
+  box-shadow: $shadow-base;
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+
+  &.btn-red {
+    background-color: $red-700;
+    color: $red-100;
+    
+    &:hover {
+      background-color: $red-500;
+    }
+  }
+}
