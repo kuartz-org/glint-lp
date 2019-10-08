@@ -1,4 +1,4 @@
-footer{
+footer {
   margin: 0;
   padding: 2rem;
   padding-bottom: 4rem;
@@ -26,10 +26,8 @@ footer{
 
   #footer-content {
     margin: 0 auto;
-    max-width: 1024px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-wrap: wrap-reverse;
 
     span {
       color: $gray-300;
@@ -41,16 +39,35 @@ footer{
     }
 
     .grid{
-      flex: 0 0 50%;
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-template-rows: 50% 50%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
 
       a {
-        margin: 1rem 0;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
 
-        &:nth-child(2n) {
-          text-align: right;
+@media (min-width: 768px) {
+  footer {
+    #footer-content {
+      max-width: 1024px;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .grid{
+        flex: 0 0 50%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+  
+        a {
+          &:nth-child(2n) {
+            text-align: right;
+          }
         }
       }
     }

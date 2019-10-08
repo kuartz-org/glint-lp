@@ -7,7 +7,9 @@ footer
       =< link_to 'Kuartz', 'https://www.kuartz.fr'
 
     .grid
-      = link_to 'Consultez la FAQ',     '#'
-      = link_to 'Nous contacter',       '#'
-      = link_to 'Mentions légales',     '#'
-      = link_to 'Conditions générales', '#'
+      / = link_to 'Consultez la FAQ', '#'
+      /remove span if link before it for correct alignement
+      span
+      = mail_to 'contact@kuartz.fr', 'Nous contacter'
+      / = link_to 'Mentions légales', '#'
+      / = link_to 'Conditions générales', '#'

@@ -9,7 +9,9 @@ twitter_card_img: ''
     h1 Maitrisez enfin la gestion des données de vos collaborateurs
 
     .cta
-      = link_to 'Contactez-nous', '#', class: 'btn btn-red'
+      / = link_to 'Contactez-nous', '#', class: 'btn btn-red'
+      = partial 'components/contact_button'
+
 
   .illustration
     = svg_tag 'svg/process.svg'
@@ -43,4 +45,4 @@ twitter_card_img: ''
         span Accessible en ligne
 
   .cta
-    = link_to 'Contactez-nous', '#', class: 'btn btn-red'
+    = partial 'components/contact_button'
