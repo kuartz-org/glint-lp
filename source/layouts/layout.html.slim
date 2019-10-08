@@ -7,7 +7,7 @@ html prefix="og: http://ogp.me/ns#" lang="#{data.settings.site.i18n}"
     meta name="viewport"              content="width=device-width, initial-scale=1.0"
     / = partial 'layouts/commons/meta_tags'
     
-    link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css"
+    link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
     = stylesheet_link_tag 'application'
     
     = yield_content :head
